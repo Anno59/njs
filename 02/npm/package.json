@@ -1,0 +1,32 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "3": "cross-env nodehaha=2 node ./3.js ",
+    "4": "cross-env NODE_ENV=production node nodeenv.js",
+    "5": "cross-env NODE_ENV=development node nodeenv.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node ./1.js && node ./2.js",
+    "build": "echo $npm_package_config_env"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cowsay": "^1.5.0",
+    "cross-env": "^7.0.3",
+    "gulp": "^4.0.2",
+    "minimist": "^1.2.5"
+  },
+  "dependencies": {
+    "03-custom": "^1.0.1",
+    "fs-extra": "^10.0.0",
+    "lodash": "~1.0.1",
+    "progress": "^2.0.3"
+  },
+  "config": {
+    "env": 1
+  }
+}
